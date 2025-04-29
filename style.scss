@@ -7,40 +7,43 @@
     background-color: #E1FF8F;
     height: 800px;
 
-    &-text {
+    &__text {
+        font-family: Montserrat;
         font-size: 64px;
         line-height: 78px;
         font-weight: 700;
     }
 
-    &-info {
+    &__info {
         padding-top: 24px;
+        font-family: Montserrat;
         font-weight: 400;
         line-height: 32px;
         font-size: 24px;
         text-align: left;
     }
 
-    &-content {
+    &__content {
         padding-top: 196px;
-        padding-left: 120px;
         width: 768px;
         height: 358px;
     }
 
-    &-link {
+    &__link {
         font-weight: 600;
+        font-family: Montserrat;
         color: #000;
         text-decoration: none;
     }
 
-    &-button {
+    &__button {
         padding-top: 16px;
         box-sizing: border-box;
         border-radius: 60px;
         margin-top: 48px;
         font-size: 24px;
         font-weight: 600;
+        font-family: Montserrat;
         width: 247px;
         height: 66px;
         text-align: center;
@@ -48,7 +51,8 @@
         color: #ffffff;
         padding-top: 16px;
 
-        &__link {
+        &-link {
+            font-family: Montserrat;
             text-decoration: none;
             color: #ffffff;
         }
@@ -89,6 +93,11 @@
     }
 }
 
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
 
 .about {
     background-color: #202027;
@@ -96,11 +105,11 @@
 
     &-head {
         padding-top: 94px;
-        margin-left: 119px;
     }
 
     &-header {
         color: #ffffff;
+        font-family: Montserrat;
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;
@@ -121,16 +130,28 @@
     grid-template-columns: repeat(12, 1fr);
     row-gap: 32px;
     column-gap: 32px;
-    padding-left: 120px;
-    padding-right: 120px;
     padding-top: 72px;
+    font-family: Montserrat;
 
-    &-item {
+    &__item {
         background-color: #ffffff;
         border-radius: 30px;
+
+        &_small {
+            height: 473px;
+        }
+
+        &_bigger {
+            height: 551px;
+        }
+
+        &_big {
+            height: 512px;
+        }
     }
 
-    &-content {
+
+    &__content {
         grid-column: span 4;
         display: flex;
         flex-direction: column;
@@ -138,14 +159,14 @@
         z-index: 2;
     }
 
-    &-name {
+    &__name {
         padding: 32px 32px 36px 32px;
         flex-direction: column;
         gap: 16px;
         display: flex;
     }
 
-    &-number {
+    &__number {
         width: 108px;
         border-radius: 52px;
         background-color: #F7F7F7;
@@ -160,33 +181,22 @@
 
     }
 
-    &-header {
+    &__header {
         color: #000;
         font-size: 32px;
         font-weight: 700;
         line-height: 39px;
     }
 
-    &-box {
+    &__box {
         text-decoration: none;
     }
-}
 
-.bigger {
-    height: 551px;
-}
-
-.big {
-    height: 512px;
-}
-
-.small {
-    height: 473px;
-}
-
-.img {
-    border-radius: 30px;
-    display: block;
+    &__img {
+        border-radius: 30px;
+        display: block;
+        width: 100%;
+    }
 }
 
 .star-3 {
