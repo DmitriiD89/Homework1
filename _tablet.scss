@@ -1,0 +1,41 @@
+@media(max-width:1023px) {
+    .game__item {
+        grid-column: span 2;
+    }
+
+    .center {
+        padding-left: calc(50% - 300px);
+        padding-right: calc(50% - 300px);
+    }
+
+    .header-info {
+        width: auto;
+    }
+
+    .about {
+        height: auto;
+    }
+
+    .game {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+
+        &__item {
+            width: 270px;
+
+            &_small {
+                height: auto;
+            }
+
+            &_big {
+                height: auto;
+            }
+
+            &_bigger {
+                height: auto;
+            }
+        }
+    }
+}
