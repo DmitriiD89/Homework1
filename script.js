@@ -1,2 +1,2 @@
-let a = 20;
-alert (a);
+let dateIphone = ("29.06.2007");
+alert (dateIphone);
