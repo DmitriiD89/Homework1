@@ -62,7 +62,7 @@
 
 .about {
   background: url(./img/star.png) 933px 77px no-repeat, #202027;
-  height: 1470px;
+  padding-bottom: 50px;
 }
 .about-head {
   padding-top: 94px;
@@ -90,18 +90,42 @@
 .game {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(17, 32px);
   gap: 32px;
   padding-top: 72px;
   font-family: Montserrat;
   align-items: start;
   justify-content: center;
 }
+.game-content1 {
+  grid-column: span 4;
+  grid-row: span 8;
+}
+.game-content2 {
+  grid-column: span 4;
+  grid-row: span 8;
+}
+.game-content3 {
+  grid-column: span 4;
+  grid-row: span 8;
+}
+.game-content4 {
+  grid-column: span 4;
+  grid-row: span 8;
+}
+.game-content5 {
+  grid-column: span 4;
+  grid-row: span 8;
+  margin-top: 32px;
+}
+.game-content6 {
+  grid-column: span 4;
+  grid-row: span 8;
+}
 .game__item {
   background-color: #ffffff;
   border-radius: 30px;
   grid-column: span 3;
-  z-index: 2;
-  width: 378px;
 }
 .game__item_small {
   height: 473px;
@@ -111,13 +135,6 @@
 }
 .game__item_bigger {
   height: 551px;
-}
-.game__content {
-  grid-column: span 4;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  z-index: 2;
 }
 .game__name {
   padding: 32px 32px 36px 32px;
@@ -196,6 +213,18 @@
   left: 987px;
 }
 
+.mini {
+  padding-top: 46px;
+  background: #202027;
+}
+.mini-header {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
 @media (max-width: 767px) {
   .header {
     height: 649px;
@@ -255,7 +284,8 @@
     padding-right: 16px;
   }
   .game {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     padding-top: 16px;
   }
   .game__item {
@@ -274,23 +304,22 @@
     grid-column: span 2;
   }
   .center {
-    padding-left: calc(50% - 300px);
-    padding-right: calc(50% - 300px);
+    padding-left: 32px;
+    padding-right: 32px;
   }
-  .header-info {
+  .header__info {
     width: auto;
   }
   .about {
     height: auto;
   }
   .game {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
     gap: 16px;
   }
-  .game__item {
-    width: 270px;
+  .game-content5 {
+    margin-top: 0px;
   }
   .game__item_small {
     height: auto;

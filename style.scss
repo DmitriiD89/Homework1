@@ -82,7 +82,7 @@
     background:
         url(./img/star.png) 933px 77px no-repeat,
         #202027;
-    height: 1470px;
+        padding-bottom: 50px;
 
     &-head {
         padding-top: 94px;
@@ -113,19 +113,49 @@
 .game {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(17, 32px);
     gap: 32px;
     padding-top: 72px;
     font-family: Montserrat;
     align-items: start;
     justify-content: center;
 
+    &-content1 {
+        grid-column: span 4;
+        grid-row: span 8;
+    }
+
+    &-content2 {
+        grid-column: span 4;
+        grid-row: span 8;
+    }
+
+    &-content3 {
+        grid-column: span 4;
+        grid-row: span 8;
+    }
+
+    &-content4 {
+        grid-column: span 4;
+        grid-row: span 8;
+    }
+
+    &-content5 {
+        grid-column: span 4;
+        grid-row: span 8;
+        margin-top: 32px;
+    }
+
+    &-content6 {
+        grid-column: span 4;
+        grid-row: span 8;
+    }
 
     &__item {
         background-color: #ffffff;
         border-radius: 30px;
         grid-column: span 3;
-        z-index: 2;
-        width: 378px;
+
 
         &_small {
             height: 473px;
@@ -141,13 +171,7 @@
     }
 
 
-    &__content {
-        grid-column: span 4;
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-        z-index: 2;
-    }
+
 
     &__name {
         padding: 32px 32px 36px 32px;
@@ -237,6 +261,17 @@
     position: absolute;
     top: 859px;
     left: 987px;
+}
+.mini{
+    padding-top: 46px;
+    background: #202027;
+    &-header{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    }
 }
 
 

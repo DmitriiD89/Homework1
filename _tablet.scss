@@ -4,11 +4,11 @@
     }
 
     .center {
-        padding-left: calc(50% - 300px);
-        padding-right: calc(50% - 300px);
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
-    .header-info {
+    .header__info {
         width: auto;
     }
 
@@ -17,13 +17,17 @@
     }
 
     .game {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: auto;
         gap: 16px;
 
+        &-content5 {
+            margin-top: 0px;
+        }
+
         &__item {
-            width: 270px;
+
 
             &_small {
                 height: auto;
