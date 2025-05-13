@@ -215,6 +215,7 @@
 
 .mini {
   padding-top: 46px;
+  padding-bottom: 100px;
   background: #202027;
 }
 .mini-header {
@@ -223,6 +224,79 @@
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
+  padding-bottom: 40px;
+}
+.mini-box {
+  height: 500px;
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+  margin-top: 32px;
+}
+.mini-box-left {
+  height: 500px;
+  background-color: #F7F7F7;
+  display: flex;
+  border-radius: 30px;
+  margin-top: 32px;
+}
+.mini-content {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+}
+.mini-head {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.mini-about {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 24px;
+}
+.mini-button {
+  width: 247px;
+  height: 66px;
+  background-color: #202027;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  border-radius: 60px;
+  margin-top: 36px;
+}
+.mini-image {
+  height: 100%;
+  border-radius: 30px;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #BDED35;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -297,6 +371,9 @@
   }
   .game__button {
     display: block;
+  }
+  .mini {
+    display: none;
   }
 }
 @media (max-width: 1023px) {

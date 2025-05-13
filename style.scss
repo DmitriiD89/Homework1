@@ -82,7 +82,7 @@
     background:
         url(./img/star.png) 933px 77px no-repeat,
         #202027;
-        padding-bottom: 50px;
+    padding-bottom: 50px;
 
     &-head {
         padding-top: 94px;
@@ -178,6 +178,7 @@
         flex-direction: column;
         gap: 16px;
         display: flex;
+
     }
 
     &__number {
@@ -262,17 +263,103 @@
     top: 859px;
     left: 987px;
 }
-.mini{
+
+.mini {
     padding-top: 46px;
+    padding-bottom: 100px;
     background: #202027;
-    &-header{
-    color: #ffffff;
-    font-family: Montserrat;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 78px;
+
+    &-header {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        padding-bottom: 40px;
+    }
+
+
+    &-box {
+        height: 500px;
+        background-color: #F7F7F7;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 30px;
+        margin-top: 32px;
+
+        &-left {
+            height: 500px;
+            background-color: #F7F7F7;
+            display: flex;
+            border-radius: 30px;
+            margin-top: 32px;
+        }
+    }
+
+    &-content {
+        padding: 48px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-head {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    &-about {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-top: 24px;
+    }
+
+    &-button {
+        width: 247px;
+        height: 66px;
+        background-color: #202027;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+        padding-left: 28px;
+        padding-right: 28px;
+        border-radius: 60px;
+        margin-top: 36px
+    }
+
+    &-image {
+        height: 100%;
+
+        border-radius: 30px;
     }
 }
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #BDED35;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
 
 
 @import 'mobile';
