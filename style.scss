@@ -47,6 +47,7 @@
     }
 
     &__button {
+        display: block;
         padding-top: 16px;
         box-sizing: border-box;
         border-radius: 60px;
@@ -60,17 +61,15 @@
         background-color: #202027;
         color: #ffffff;
         padding-top: 16px;
-
-        &-link {
-            font-family: Montserrat;
-            text-decoration: none;
-            color: #ffffff;
-        }
-
+        text-decoration: none;
+        color: #ffffff;
+        font-family: Montserrat;
     }
 
-
 }
+
+
+
 
 .center {
     padding-left: calc(50% - 600px);
