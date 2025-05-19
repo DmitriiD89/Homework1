@@ -46,3 +46,20 @@ while (friday <= n) {
     console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет`);
     friday += 7;
 };
+
+// //Тренировка
+
+// const user = {
+//     name : 'Иван',
+//     age : '37',
+//     city : 'Снежинск',
+//     getInfo(){
+//         return `Пользователь ${user.name}, возраст ${user.age},проживает в городе ${user.city}`;
+//     }   
+// }
+// console.log(user.getInfo());
+
+
+
+
+

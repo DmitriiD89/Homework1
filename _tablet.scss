@@ -17,9 +17,10 @@
     }
 
     .game {
-
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: auto;
+        display: flex;
+        flex-wrap: wrap;
+        // grid-template-columns: repeat(8, 1fr);
+        // grid-template-rows: auto;
         gap: 16px;
 
         &-content5 {
@@ -41,5 +42,9 @@
                 height: auto;
             }
         }
+    }
+
+    .mini {
+        display: none;
     }
 }

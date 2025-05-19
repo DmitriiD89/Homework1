@@ -90,6 +90,11 @@
         &__button {
             display: block;
         }
+
+        &-button:hover {
+            color: #202027;
+            background-color: #Ffffff;
+        }
     }
 
     .mini {
