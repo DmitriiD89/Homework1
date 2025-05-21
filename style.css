@@ -319,6 +319,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 147px;
+    height: auto;
   }
   .header__text {
     font-family: Montserrat;
@@ -348,6 +349,7 @@
   }
   .about {
     height: auto;
+    padding-bottom: 0px;
   }
   .about-head {
     display: none;
@@ -362,34 +364,64 @@
     text-align: left;
     padding-top: 48px;
   }
+  .star-2 {
+    display: none;
+  }
+  .star-3 {
+    display: none;
+  }
   .center {
     padding-left: 16px;
     padding-right: 16px;
   }
   .game {
-    display: flex;
-    flex-direction: column;
-    padding-top: 16px;
-  }
-  .game__item {
-    height: auto;
-    width: auto;
-  }
-  .game__about {
-    display: block;
-  }
-  .game__button {
-    display: block;
-  }
-  .game-button:hover {
-    color: #202027;
-    background-color: #Ffffff;
-  }
-  .mini {
     display: none;
   }
+  .mini-header {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: none;
+    padding-bottom: 0px;
+  }
+  .mini-content {
+    padding: 30px;
+  }
+  .mini-head {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+  }
+  .mini-about {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 16px;
+  }
+  .mini-button {
+    margin-top: 36px;
+    width: auto;
+  }
+  .mini-box {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .mini-box-left {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .mini-box__mob {
+    flex-direction: column;
+  }
 }
-@media (max-width: 1023px) {
+@media (max-width: 1023px) and (min-width: 768px) {
   .game__item {
     grid-column: span 2;
   }

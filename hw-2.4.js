@@ -1,18 +1,5 @@
-let num = 56;
 
 
-function tryGuess(){
-    
-    let answ = prompt('Угадайте число от 1 до 100');
-    
-    if (num<answ){
-    alert('Неверно. Загаданное число меньше')
-    } else if(num>answ){
-    alert('Загаданное число больше');
-    } else {
-    alert('Молодец! Угадал')
-    }
-}
 
 //Задание 1
 
@@ -66,7 +53,7 @@ function tryGuess(){
 //Задание 5
 
 // function examination(a,b) {
-      
+
 //     if ( (isNaN(a)) && (isNaN(b)) ){
 //         return a * b;
 //     } else {
@@ -80,13 +67,13 @@ function tryGuess(){
 
 // function cube() {
 //     n = prompt('Введите число');
-    
+
 //     if ( isNaN(n)){
 //         console.log('Переданный параметр не является числом');
 //     } else {
 //         m=n**3;
 //         console.log(`${n} в кубе равняется ${m}`);
-        
+
 //     }
 // }
 // console.log(cube());
@@ -95,21 +82,23 @@ function tryGuess(){
 
 const circle = {
     radius: 10,
-    getArea(){
+    getArea() {
         return math.PI * this.radius * this.radius;
     },
-    getPerimetr(){
+    getPerimetr() {
         return 2 * Math.PI * this.radius;
     }
 }
 const circle2 = {
-    radius: 8,  
-    getArea(){
+    radius: 8,
+    getArea() {
         return math.Pi * this.radius * this.radius;
     },
-    getPerimetr(){
+    getPerimetr() {
         return 2 * Math.PI * this.radius;
+
     }
 }
+
 
 
