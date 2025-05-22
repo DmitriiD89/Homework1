@@ -1,6 +1,6 @@
 @media(max-width:767px) {
     .header {
-        height: 649px;
+        height: 700px;
         background:
             url(./img/mob_head.png) 187px -103px no-repeat,
             url(./img/img-head-2.svg) 156px 69px no-repeat,
@@ -59,16 +59,6 @@
         }
     }
 
-    .mob-header {
-        display: block;
-        color: #ffffff;
-        font-family: Montserrat;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 49px;
-        text-align: left;
-        padding-top: 48px;
-    }
 
     .star-2 {
         display: none;
@@ -90,6 +80,9 @@
 
 
     .mini {
+        padding-bottom: 10px;
+        padding-top: 48px;
+
         &-header {
             font-family: Montserrat;
             font-size: 40px;
@@ -97,8 +90,8 @@
             line-height: 49px;
             letter-spacing: 0px;
             text-align: left;
-            padding-top: none;
-            padding-bottom: 0px;
+            padding-top: 0px;
+            padding-bottom: 12px;
         }
 
         &-content {
@@ -123,17 +116,25 @@
         }
 
         &-button {
-            margin-top: 36px;
+            margin-top: 32px;
             width: auto;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
         }
 
         &-box {
             flex-direction: column-reverse;
             height: auto;
+            margin-top: 24px;
 
             &-left {
                 flex-direction: column-reverse;
                 height: auto;
+                margin-top: 24px;
             }
 
             &__mob {
