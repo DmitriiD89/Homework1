@@ -13,7 +13,7 @@
 // const num = [1,5,4,10,0,3];
 // for (let index = 0; index < num.length; index++) {
 //     if (num[index] === 4){
-//         console.log([index]);
+//         console.log(index);
         
 //     }
     
@@ -39,8 +39,10 @@
 //Задание 5
 
 // const mass = [1,1,1];
-// for(i=0;i<3;i++){
-// mass.push(2);
+// let i = 0;
+// for( i=0; i<3; i++ ){
+
+//     mass.push(2);
 // }
 // console.log(mass);
    
@@ -48,7 +50,7 @@
 //Задание 6
 
 // const massive = [9,8,7,'a',6,5];
-// massive.sort();
+// massive.sort((a,b)=>a-b);
 // const mass = massive.filter(Number);
 // console.log(mass);
 
@@ -110,7 +112,7 @@
 
 // const massive = [];
 // for (let i = 0; i < 10; i++) {
-//     const arr = Math.floor(Math.random(0,10)*10)
+//     const arr = Math.floor(Math.random()*10)
 //     massive.push(arr);  
 // }
 // function newArr() {
@@ -119,9 +121,10 @@
 
 // console.log(newArr());
 
+//Задание 15
 // const massive = [];
 // for (let i = 0; i < 6; i++) {
-//     const arr = Math.floor(Math.random(0,10)*10);
+//     const arr = Math.floor(Math.random()*10);
 //     massive.push(arr);  
 // }
 // console.log(massive);

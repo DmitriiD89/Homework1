@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .header {
     background-color: #E1FF8F;
@@ -14,6 +17,7 @@
         url(./img/img-head-5.png) 851px -200px no-repeat,
         #E1FF8F;
     background-repeat: no-repeat;
+
 
 
 
@@ -32,6 +36,8 @@
         font-size: 24px;
         text-align: left;
         width: 720px;
+
+
     }
 
     &__content {
@@ -64,6 +70,8 @@
         text-decoration: none;
         color: #ffffff;
         font-family: Montserrat;
+       
+
     }
 
     &__button:hover {
@@ -87,6 +95,7 @@
         url(./img/star.png) 933px 77px no-repeat,
         #202027;
     padding-bottom: 50px;
+    scroll-behavior: smooth;
 
     &-head {
         padding-top: 94px;
@@ -124,9 +133,15 @@
     align-items: start;
     justify-content: center;
 
+
+
     &-content1 {
         grid-column: span 4;
         grid-row: span 8;
+    }
+
+    &-content1:hover {
+        transform: scale(1.1);
     }
 
     &-content2 {
@@ -134,14 +149,26 @@
         grid-row: span 8;
     }
 
+    &-content2:hover {
+        transform: scale(1.1);
+    }
+
     &-content3 {
         grid-column: span 4;
         grid-row: span 8;
     }
 
+    &-content3:hover {
+        transform: scale(1.1);
+    }
+
     &-content4 {
         grid-column: span 4;
         grid-row: span 8;
+    }
+
+    &-content4:hover {
+        transform: scale(1.1);
     }
 
     &-content5 {
@@ -150,9 +177,17 @@
         margin-top: 32px;
     }
 
+    &-content5:hover {
+        transform: scale(1.1);
+    }
+
     &-content6 {
         grid-column: span 4;
         grid-row: span 8;
+    }
+
+    &-content6:hover {
+        transform: scale(1.1);
     }
 
     &__item {

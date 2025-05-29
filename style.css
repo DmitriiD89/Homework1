@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   background-color: #E1FF8F;
   height: 800px;
@@ -66,6 +70,7 @@
 .about {
   background: url(./img/star.png) 933px 77px no-repeat, #202027;
   padding-bottom: 50px;
+  scroll-behavior: smooth;
 }
 .about-head {
   padding-top: 94px;
@@ -104,26 +109,44 @@
   grid-column: span 4;
   grid-row: span 8;
 }
+.game-content1:hover {
+  transform: scale(1.1);
+}
 .game-content2 {
   grid-column: span 4;
   grid-row: span 8;
+}
+.game-content2:hover {
+  transform: scale(1.1);
 }
 .game-content3 {
   grid-column: span 4;
   grid-row: span 8;
 }
+.game-content3:hover {
+  transform: scale(1.1);
+}
 .game-content4 {
   grid-column: span 4;
   grid-row: span 8;
+}
+.game-content4:hover {
+  transform: scale(1.1);
 }
 .game-content5 {
   grid-column: span 4;
   grid-row: span 8;
   margin-top: 32px;
 }
+.game-content5:hover {
+  transform: scale(1.1);
+}
 .game-content6 {
   grid-column: span 4;
   grid-row: span 8;
+}
+.game-content6:hover {
+  transform: scale(1.1);
 }
 .game__item {
   background-color: #ffffff;
