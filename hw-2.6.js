@@ -130,3 +130,4 @@
 // console.log(massive);
 // let sum = massive.reduce((total,number) => total + number,0);
 // console.log(sum/6);
+
