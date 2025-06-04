@@ -42,14 +42,14 @@
 
 // function convertationNumber(massNumber){
 // const arr = [];
-//     for (i=0; i<((massNumber/2) - 1); i++) {
-//         arr.push(Math.floor(Math.random() * massNumber));
+// let i;
+//     for (i=0; i<(Math.round(massNumber/2)); i++) {
+//         arr.push(Math.floor(Math.random() * massNumber+1));
 //     };
-//     arr.push(massNumber);
 //     return arr;
    
 // }
-// console.log(convertationNumber(10));
+// console.log(convertationNumber(2));
 
 //Задание 7
 
@@ -79,3 +79,4 @@
 // let myDate = new Date();
 // let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " это " + days[myDate.getDate()] + '.' + 'Время' + myDate.getHours() + ':' + myDate.getMinutes();
 // console.log(fullDate);
+
