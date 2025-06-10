@@ -97,7 +97,7 @@ function stoneScissorsPaper(){
     const arr = ['камень','ножницы','бумага'];
     let i = Math.floor(Math.random() * 3);
     let userAnswer = prompt('Выберете: 1.Камень 2.Ножницы 3.Бумага');
-    if (userAnswer.toLowerCase() === arr[i].toLowerCase()){
+    if (userAnswer.toLowerCase() == arr[i].toLowerCase()){
         alert('Ничья') 
     } else if (userAnswer.toLowerCase()==='камень' && arr[i].toLowerCase()==='бумага'){
         alert('Проигрыш');
@@ -105,8 +105,8 @@ function stoneScissorsPaper(){
         alert('Проигрыш');  
     } else if (userAnswer.toLowerCase()==='ножницы' && arr[i].toLowerCase()==='камень'){
             alert('Проигрыш');
-    } else{
-        alert('Победа');
-    }
+    } else if(userAnswer.toLowerCase()!=='камень' && userAnswer.toLowerCase()!=='ножницы' && userAnswer.toLowerCase()!=='бумага'){
+        alert('Неверный ввод')}
+     else alert('Победа');
     alert(`Выбор компьютера был: ${arr[i]}`);
     };

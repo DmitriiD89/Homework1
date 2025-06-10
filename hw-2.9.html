@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>.heading_remove{display:none}</style>
+    <style>
+        .heading_remove {
+            display: none
+        }
+    </style>
 </head>
+
 <body>
-   Задание 1
+    Задание 1
     <h1 class="heading ">Заголовок текста</h1>
     <button class="btn">Скрыть</button>
 
     <p>Задание 2</p>
     <p class="text">Lorem ipsum dolor sit amet.</p>
     <button class="btn-clr">Изменить цвет</button>
-   
+
     <p>Задание 3</p>
     <h1 class="head">Заголовок задание номер три</h1>
     <button class="btn-rename">Изменить текст</button>
@@ -24,40 +30,40 @@
     <!-- <p class="description">Lorem ipsum dolor sit amet.</p>
     <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing.</p> -->
-   
-   <p>Задание 5</p>
 
-   <p class="description">Lorem.</p>
-   <p class="description">Lorem, ipsum.</p>
-   <p class="descript">Lorem, ipsum dolor.</p>
-   <p class="description">Lorem, ipsum.</p>
-   <p class="description">Lorem, ipsum dolor.</p>
+    <p>Задание 5</p>
 
-   <p>Задание 6</p>
+    <p class="description">Lorem.</p>
+    <p class="description">Lorem, ipsum.</p>
+    <p class="descript">Lorem, ipsum dolor.</p>
+    <p class="description">Lorem, ipsum.</p>
+    <p class="description">Lorem, ipsum dolor.</p>
 
-   <button class="btn-new">Добавить элемент</button>
+    <p>Задание 6</p>
 
-   <p>Задание 7</p>
+    <button class="btn-new">Добавить элемент</button>
 
-   <button class="delete"> Удалить элемент</button>
-   <script>
+    <p>Задание 7</p>
+
+    <button class="delete"> Удалить элемент</button>
+    <script>
         //Задание1
         const headText = document.querySelector('.heading');
         const buttonLink = document.querySelector('.btn');
-        buttonLink.addEventListener('click',function(){
-            headText.classList.toggle('heading_remove');  
+        buttonLink.addEventListener('click', function () {
+            headText.classList.toggle('heading_remove');
         })
-       //Задание 2
+        //Задание 2
         const textEl = document.querySelector('.text');
         const buttonColor = document.querySelector('.btn-clr');
-        buttonColor.addEventListener('click', ()=>{
+        buttonColor.addEventListener('click', () => {
             textEl.style.color = 'blue';
         });
         //Задание 3
         const headerText = document.querySelector('.head');
         const buttonRename = document.querySelector('.btn-rename');
-        buttonRename.addEventListener('click', function(){
-         headerText.textContent = 'Привет, мир!'
+        buttonRename.addEventListener('click', function () {
+            headerText.textContent = 'Привет, мир!'
         });
         //Задание 4
         // const allDescription = document.querySelectorAll('.description');
@@ -66,14 +72,14 @@
         // });
         //Задание 5
         const allDescription = document.querySelectorAll('.description');
-        allDescription.forEach(description =>{
+        allDescription.forEach(description => {
             description.textContent = 'Новый текст';
         });
         //Задание 6
         const newEl = document.createElement('p')
         newEl.textContent = 'Новый абзац';
         const btnNew = document.querySelector('.btn-new');
-        btnNew.addEventListener('click',()=>{
+        btnNew.addEventListener('click', () => {
             document.body.appendChild(newEl);
         });
 
@@ -81,10 +87,11 @@
 
         const btnEl = document.querySelector('.delete');
         const delEl = document.querySelector('.description');
-        btnEl.addEventListener('click',()=>{
+        btnEl.addEventListener('click', () => {
             delEl.remove();
         })
 
     </script>
 </body>
+
 </html>
