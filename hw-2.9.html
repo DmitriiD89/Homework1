@@ -27,9 +27,9 @@
 
     <p>Задание 4</p>
 
-    <!-- <p class="description">Lorem ipsum dolor sit amet.</p>
+    <p class="description">Lorem ipsum dolor sit amet.</p>
     <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
-    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing.</p> -->
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
 
     <p>Задание 5</p>
 
@@ -65,21 +65,22 @@
         buttonRename.addEventListener('click', function () {
             headerText.textContent = 'Привет, мир!'
         });
-        //Задание 4
-        // const allDescription = document.querySelectorAll('.description');
-        // allDescription.forEach(description => {
-        // description.textContent = 'Измененный текст';   
-        // });
+       // Задание 4
+        const allDescription = document.querySelectorAll('.description');
+        allDescription.forEach(description => {
+        description.textContent = 'Измененный текст';   
+        });
         //Задание 5
         const allDescription = document.querySelectorAll('.description');
         allDescription.forEach(description => {
             description.textContent = 'Новый текст';
         });
         //Задание 6
-        const newEl = document.createElement('p')
-        newEl.textContent = 'Новый абзац';
+        
         const btnNew = document.querySelector('.btn-new');
         btnNew.addEventListener('click', () => {
+            const newEl = document.createElement('p')
+            newEl.textContent = 'Новый абзац';
             document.body.appendChild(newEl);
         });
 
@@ -87,8 +88,13 @@
 
         const btnEl = document.querySelector('.delete');
         const delEl = document.querySelector('.description');
+        
         btnEl.addEventListener('click', () => {
+            if (delEl){
             delEl.remove();
+            } else {
+                console.log('Элемент не найден');
+            }
         })
 
     </script>
