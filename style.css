@@ -254,7 +254,7 @@ html {
   line-height: 78px;
   padding-bottom: 40px;
 }
-.mini-box {
+.mini__box {
   height: 500px;
   background-color: #F7F7F7;
   display: flex;
@@ -262,7 +262,7 @@ html {
   border-radius: 30px;
   margin-top: 32px;
 }
-.mini-box-left {
+.mini__box-left {
   height: 500px;
   background-color: #F7F7F7;
   display: flex;
@@ -432,17 +432,17 @@ html {
     letter-spacing: 0%;
     text-align: center;
   }
-  .mini-box {
+  .mini__box {
     flex-direction: column-reverse;
     height: auto;
     margin-top: 24px;
   }
-  .mini-box-left {
+  .mini__box-left {
     flex-direction: column-reverse;
     height: auto;
     margin-top: 24px;
   }
-  .mini-box__mob {
+  .mini__box-mob {
     flex-direction: column;
   }
 }
@@ -458,7 +458,7 @@ html {
     width: auto;
   }
   .about {
-    height: auto;
+    display: none;
   }
   .game {
     display: flex;
@@ -478,6 +478,58 @@ html {
     height: auto;
   }
   .mini {
-    display: none;
+    padding-bottom: 10px;
+    padding-top: 48px;
+  }
+  .mini-header {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 0px;
+    padding-bottom: 12px;
+  }
+  .mini-content {
+    padding: 30px;
+  }
+  .mini-head {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+  }
+  .mini-about {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 16px;
+  }
+  .mini-button {
+    margin-top: 32px;
+    width: auto;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .mini__box {
+    flex-direction: column-reverse;
+    height: auto;
+    margin-top: 24px;
+  }
+  .mini__box-left {
+    flex-direction: column-reverse;
+    height: auto;
+    margin-top: 24px;
+  }
+  .mini__box-mob {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */

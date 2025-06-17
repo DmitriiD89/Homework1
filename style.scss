@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -70,7 +71,7 @@ html{
         text-decoration: none;
         color: #ffffff;
         font-family: Montserrat;
-       
+
 
     }
 
@@ -318,7 +319,7 @@ html{
 
 
 
-    &-box {
+    &__box {
         height: 500px;
         background-color: #F7F7F7;
         display: flex;
