@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
 }
-html{
+
+body {
+    font-family: Montserrat;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -70,7 +75,7 @@ html{
         text-decoration: none;
         color: #ffffff;
         font-family: Montserrat;
-       
+
 
     }
 
@@ -81,14 +86,28 @@ html{
 
 }
 
-
-
-
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
 
+@keyframes moveRight {
+    from {
+        background-position: 3000px 50%
+    }
+
+    to {
+        background-position: -3150px 50%
+    }
+
+}
+
+.animation-strip {
+    height: 90px;
+    animation: moveRight 20s infinite;
+    background: url(./img/strip.png) no-repeat center, #BCEC30;
+    ;
+}
 
 .about {
     background:
@@ -129,66 +148,28 @@ html{
     grid-template-rows: repeat(17, 32px);
     gap: 32px;
     padding-top: 72px;
-    font-family: Montserrat;
+
     align-items: start;
     justify-content: center;
 
-
-
-    &-content1 {
+    &-content {
         grid-column: span 4;
         grid-row: span 8;
+
+
+
+        &__margin {
+            margin-top: 32px;
+        }
     }
 
-    &-content1:hover {
+    &-content:hover {
         transform: scale(1.1);
+        transition: 1s;
+
     }
 
-    &-content2 {
-        grid-column: span 4;
-        grid-row: span 8;
-    }
 
-    &-content2:hover {
-        transform: scale(1.1);
-    }
-
-    &-content3 {
-        grid-column: span 4;
-        grid-row: span 8;
-    }
-
-    &-content3:hover {
-        transform: scale(1.1);
-    }
-
-    &-content4 {
-        grid-column: span 4;
-        grid-row: span 8;
-    }
-
-    &-content4:hover {
-        transform: scale(1.1);
-    }
-
-    &-content5 {
-        grid-column: span 4;
-        grid-row: span 8;
-        margin-top: 32px;
-    }
-
-    &-content5:hover {
-        transform: scale(1.1);
-    }
-
-    &-content6 {
-        grid-column: span 4;
-        grid-row: span 8;
-    }
-
-    &-content6:hover {
-        transform: scale(1.1);
-    }
 
     &__item {
         background-color: #ffffff;
@@ -221,7 +202,7 @@ html{
         width: 108px;
         border-radius: 52px;
         background-color: #F7F7F7;
-        font-family: Montserrat;
+
         font-size: 16px;
         font-weight: 500;
         line-height: 110%;
@@ -241,7 +222,7 @@ html{
 
     &__about {
         display: none;
-        font-family: Montserrat;
+
         font-size: 16px;
         font-weight: 400;
         line-height: 20px;
@@ -283,6 +264,7 @@ html{
     }
 }
 
+
 .star-3 {
     position: absolute;
     top: 1570px;
@@ -305,11 +287,16 @@ html{
 .mini {
     padding-top: 46px;
     padding-bottom: 100px;
-    background: #202027;
+    background: url(./img/mini_big_star.png)1320px 126px no-repeat,
+    url(./img/mini_small_star.png)1277px 93px no-repeat,
+    url(./img/mini_big_star.png)1320px 3346px no-repeat,
+    url(./img/mini_small_star.png)1249px 3394px   no-repeat,
+    
+    #202027;
 
     &-header {
         color: #ffffff;
-        font-family: Montserrat;
+
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;
@@ -318,7 +305,7 @@ html{
 
 
 
-    &-box {
+    &__box {
         height: 500px;
         background-color: #F7F7F7;
         display: flex;
@@ -343,7 +330,7 @@ html{
 
     &-head {
         color: rgb(32, 32, 39);
-        font-family: Montserrat;
+
         font-size: 48px;
         font-weight: 700;
         line-height: 59px;
@@ -353,7 +340,7 @@ html{
 
     &-about {
         color: rgb(32, 32, 39);
-        font-family: Montserrat;
+
         font-size: 24px;
         font-weight: 400;
         line-height: 32px;
@@ -367,7 +354,7 @@ html{
         height: 66px;
         background-color: #202027;
         color: #ffffff;
-        font-family: Montserrat;
+
         font-size: 24px;
         font-weight: 600;
         line-height: 141.69%;
@@ -396,7 +383,7 @@ html{
     padding-bottom: 60px;
     background-color: #BDED35;
     color: rgb(0, 0, 0);
-    font-family: Montserrat;
+
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;

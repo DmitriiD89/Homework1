@@ -25,6 +25,7 @@
         </div>
 
     </header>
+    <div class="animation-strip"></div>
     <section id="head" class="about center">
         <div class="about-head">
             <h1 class="about-header">Об играх</h1>
@@ -34,7 +35,7 @@
             </p>
         </div>
         <div class="game">
-            <div class="game-content1">
+            <div class="game-content">
                 <a class="game__box" href="#number">
                     <article class="game__item game__item_small">
                         <img class="game__img" src="./img/game-img.jpeg" alt="image">
@@ -49,7 +50,7 @@
                     </article>
                 </a>
             </div>
-            <div class="game-content2">
+            <div class="game-content">
                 <a class="game__box" href="#sum">
                     <article class="game__item game__item_big">
                         <img class="game__img" src="./img/game-img_2.jpeg" alt="image">
@@ -64,7 +65,7 @@
                     </article>
                 </a>
             </div>
-            <div class="game-content3">
+            <div class="game-content">
                 <a class="game__box" href="#text">
                     <article class="game__item game__item_small">
                         <img class="game__img" src="./img/game-img-3.jpeg" alt="image" class="img">
@@ -80,7 +81,7 @@
                     </article>
                 </a>
             </div>
-            <div class="game-content4">
+            <div class="game-content">
                 <a class="game__box" href="#stone">
                     <article class="game__item game__item_bigger">
                         <img class="game__img" src="./img/game-img-4.jpeg" alt="image">
@@ -96,7 +97,7 @@
                     </article>
                 </a>
             </div>
-            <div class="game-content5">
+            <div class="game-content game-content__margin">
                 <a class="game__box" href="#quiz">
                     <article class="game__item game__item_big">
                         <img class="game__img" src="./img/game-img-5.jpeg" alt="" class="img">
@@ -111,7 +112,7 @@
                     </article>
                 </a>
             </div>
-            <div class="game-content6">
+            <div class="game-content">
                 <a class="game__box" href="#color">
                     <article class="game__item game__item_bigger">
                         <img class="game__img" src="./img/game-img-6.jpeg" alt="image" class="img">
@@ -134,7 +135,7 @@
     </section>
     <div class="mini center">
         <div class="mini-header">Мини-игры</div>
-        <div id="number" class="mini-box">
+        <div id="number" class="mini__box">
             <div class="mini-content">
                 <div class="mini-head">
                     Угадай число
@@ -146,7 +147,7 @@
             </div>
             <img class="mini-image" src="./img/number-img.jpeg" alt="image">
         </div>
-        <div id="sum" class="mini-box mini-box__mob">
+        <div id="sum" class="mini__box mini__box-mob">
             <img class="mini-image" src="./img/sum-img.jpeg" alt="image">
             <div class="mini-content">
                 <div class="mini-head">
@@ -159,7 +160,7 @@
             </div>
 
         </div>
-        <div id="text" class="mini-box">
+        <div id="text" class="mini__box">
             <div class="mini-content">
                 <div class="mini-head">
                     Переверни текст
@@ -171,7 +172,7 @@
             </div>
             <img class="mini-image" src="./img/rot-img.jpeg" alt="image">
         </div>
-        <div id="stone" class="mini-box-left mini-box__mob">
+        <div id="stone" class="mini__box-left mini__box-mob">
             <img class="mini-image" src="./img/stone-img.jpeg" alt="image">
             <div class="mini-content">
                 <div class="mini-head">
@@ -183,7 +184,7 @@
                 <button class="mini-button" onclick="stoneScissorsPaper()">Играть!</button>
             </div>
         </div>
-        <div id="quiz" class="mini-box">
+        <div id="quiz" class="mini__box">
             <div class="mini-content">
                 <div class="mini-head">
                     Простая <br>викторина
@@ -195,7 +196,7 @@
             </div>
             <img class="mini-image" src="./img/quiz-img.jpeg" alt="image">
         </div>
-        <div id="color" class="mini-box mini-box__mob">
+        <div id="color" class="mini__box mini__box-mob">
             <img class="mini-image" src="./img/color-img.jpeg" alt="image">
             <div class="mini-content">
                 <div class="mini-head">
@@ -204,7 +205,7 @@
                 <div class="mini-about">
                     Игра, в которой при клике на кнопку фон страницы меняется на случайный.
                 </div>
-                <button class="mini-button">Играть!</button>
+                <button class="mini-button clr-btn">Играть!</button>
             </div>
         </div>
     </div>
@@ -212,7 +213,7 @@
         Все права защищены.
     </footer>
     <script src="./games.js"></script>
-    
+
 </body>
 
 </html>

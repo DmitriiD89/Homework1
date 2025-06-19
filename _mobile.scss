@@ -126,7 +126,7 @@
             text-align: center;
         }
 
-        &-box {
+        &__box {
             flex-direction: column-reverse;
             height: auto;
             margin-top: 24px;
@@ -137,7 +137,7 @@
                 margin-top: 24px;
             }
 
-            &__mob {
+            &-mob {
                 flex-direction: column;
             }
         }

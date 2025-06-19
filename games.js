@@ -110,3 +110,13 @@ function stoneScissorsPaper(){
      else alert('Победа');
     alert(`Выбор компьютера был: ${arr[i]}`);
     };
+
+
+    const colorBtn = document.querySelector('.clr-btn');
+    colorBtn.addEventListener('click',()=>{
+        const colorArr = ['blue','green','red','yellow','orange','purple','white'];
+        const miniBcg = document.querySelector('.mini');
+        
+        let i = Math.floor(Math.random()*7)
+        miniBcg.style.backgroundColor = colorArr[i];
+    })
