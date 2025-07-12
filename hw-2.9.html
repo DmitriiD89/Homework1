@@ -52,8 +52,9 @@
         const buttonLink = document.querySelector('.btn');
         buttonLink.addEventListener('click', function () {
             headText.classList.toggle('heading_remove');
-        })
+        });
         //Задание 2
+        
         const textEl = document.querySelector('.text');
         const buttonColor = document.querySelector('.btn-clr');
         buttonColor.addEventListener('click', () => {
@@ -65,18 +66,18 @@
         buttonRename.addEventListener('click', function () {
             headerText.textContent = 'Привет, мир!'
         });
-       // Задание 4
-        const allDescription = document.querySelectorAll('.description');
-        allDescription.forEach(description => {
-        description.textContent = 'Измененный текст';   
-        });
+        // Задание 4
+        // const allDescription = document.querySelectorAll('.description');
+        // allDescription.forEach(description => {
+        //     description.textContent = 'Измененный текст';
+        // });
         //Задание 5
         const allDescription = document.querySelectorAll('.description');
         allDescription.forEach(description => {
             description.textContent = 'Новый текст';
         });
         //Задание 6
-        
+
         const btnNew = document.querySelector('.btn-new');
         btnNew.addEventListener('click', () => {
             const newEl = document.createElement('p')
@@ -88,10 +89,10 @@
 
         const btnEl = document.querySelector('.delete');
         const delEl = document.querySelector('.description');
-        
+
         btnEl.addEventListener('click', () => {
-            if (delEl){
-            delEl.remove();
+            if (delEl) {
+                delEl.remove();
             } else {
                 console.log('Элемент не найден');
             }

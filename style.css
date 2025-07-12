@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  font-family: Montserrat;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -67,6 +71,20 @@ html {
   padding-right: calc(50% - 600px);
 }
 
+@keyframes moveRight {
+  from {
+    background-position: 3000px 50%;
+  }
+  to {
+    background-position: -3150px 50%;
+  }
+}
+.animation-strip {
+  height: 90px;
+  animation: moveRight 20s infinite;
+  background: url(./img/strip.png) no-repeat center, #BCEC30;
+}
+
 .about {
   background: url(./img/star.png) 933px 77px no-repeat, #202027;
   padding-bottom: 50px;
@@ -101,52 +119,19 @@ html {
   grid-template-rows: repeat(17, 32px);
   gap: 32px;
   padding-top: 72px;
-  font-family: Montserrat;
   align-items: start;
   justify-content: center;
 }
-.game-content1 {
+.game-content {
   grid-column: span 4;
   grid-row: span 8;
 }
-.game-content1:hover {
-  transform: scale(1.1);
-}
-.game-content2 {
-  grid-column: span 4;
-  grid-row: span 8;
-}
-.game-content2:hover {
-  transform: scale(1.1);
-}
-.game-content3 {
-  grid-column: span 4;
-  grid-row: span 8;
-}
-.game-content3:hover {
-  transform: scale(1.1);
-}
-.game-content4 {
-  grid-column: span 4;
-  grid-row: span 8;
-}
-.game-content4:hover {
-  transform: scale(1.1);
-}
-.game-content5 {
-  grid-column: span 4;
-  grid-row: span 8;
+.game-content__margin {
   margin-top: 32px;
 }
-.game-content5:hover {
+.game-content:hover {
   transform: scale(1.1);
-}
-.game-content6 {
-  grid-column: span 4;
-  grid-row: span 8;
-}
-.game-content6:hover {
-  transform: scale(1.1);
+  transition: 1s;
 }
 .game__item {
   background-color: #ffffff;
@@ -172,7 +157,6 @@ html {
   width: 108px;
   border-radius: 52px;
   background-color: #F7F7F7;
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
   line-height: 110%;
@@ -188,7 +172,6 @@ html {
 }
 .game__about {
   display: none;
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -244,17 +227,16 @@ html {
 .mini {
   padding-top: 46px;
   padding-bottom: 100px;
-  background: #202027;
+  background: url(./img/mini_big_star.png) 1320px 126px no-repeat, url(./img/mini_small_star.png) 1277px 93px no-repeat, url(./img/mini_big_star.png) 1320px 3346px no-repeat, url(./img/mini_small_star.png) 1249px 3394px no-repeat, #202027;
 }
 .mini-header {
   color: #ffffff;
-  font-family: Montserrat;
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
   padding-bottom: 40px;
 }
-.mini-box {
+.mini__box {
   height: 500px;
   background-color: #F7F7F7;
   display: flex;
@@ -262,7 +244,7 @@ html {
   border-radius: 30px;
   margin-top: 32px;
 }
-.mini-box-left {
+.mini__box-left {
   height: 500px;
   background-color: #F7F7F7;
   display: flex;
@@ -276,7 +258,6 @@ html {
 }
 .mini-head {
   color: rgb(32, 32, 39);
-  font-family: Montserrat;
   font-size: 48px;
   font-weight: 700;
   line-height: 59px;
@@ -285,7 +266,6 @@ html {
 }
 .mini-about {
   color: rgb(32, 32, 39);
-  font-family: Montserrat;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
@@ -298,7 +278,6 @@ html {
   height: 66px;
   background-color: #202027;
   color: #ffffff;
-  font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
   line-height: 141.69%;
@@ -323,7 +302,6 @@ html {
   padding-bottom: 60px;
   background-color: #BDED35;
   color: rgb(0, 0, 0);
-  font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
@@ -432,17 +410,17 @@ html {
     letter-spacing: 0%;
     text-align: center;
   }
-  .mini-box {
+  .mini__box {
     flex-direction: column-reverse;
     height: auto;
     margin-top: 24px;
   }
-  .mini-box-left {
+  .mini__box-left {
     flex-direction: column-reverse;
     height: auto;
     margin-top: 24px;
   }
-  .mini-box__mob {
+  .mini__box-mob {
     flex-direction: column;
   }
 }
@@ -458,7 +436,7 @@ html {
     width: auto;
   }
   .about {
-    height: auto;
+    display: none;
   }
   .game {
     display: flex;
@@ -478,6 +456,58 @@ html {
     height: auto;
   }
   .mini {
-    display: none;
+    padding-bottom: 10px;
+    padding-top: 48px;
+  }
+  .mini-header {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 0px;
+    padding-bottom: 12px;
+  }
+  .mini-content {
+    padding: 30px;
+  }
+  .mini-head {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+  }
+  .mini-about {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 16px;
+  }
+  .mini-button {
+    margin-top: 32px;
+    width: auto;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .mini__box {
+    flex-direction: column-reverse;
+    height: auto;
+    margin-top: 24px;
+  }
+  .mini__box-left {
+    flex-direction: column-reverse;
+    height: auto;
+    margin-top: 24px;
+  }
+  .mini__box-mob {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
